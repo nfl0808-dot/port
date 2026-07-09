@@ -39,11 +39,14 @@ nav a{font-size:14px;text-decoration:none;margin-left:22px;
 nav a:hover{color:var(--ink)}
 .lang-switch{display:flex;align-items:center;background:var(--paper);
   border:1px solid var(--line);border-radius:100px;padding:3px;gap:2px;}
-.lang-switch button{border:none;background:transparent;cursor:pointer;
-  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.02em;
-  color:var(--ink-soft);padding:6px 12px;border-radius:100px;transition:background .2s,color .2s;}
-.lang-switch button.active{background:var(--ink);color:#fff}
+.lang-switch button{-webkit-appearance:none;appearance:none;border:none;
+  background:transparent;cursor:pointer;font-family:var(--sans);
+  font-size:12px;font-weight:600;letter-spacing:.02em;line-height:1;
+  color:var(--ink-soft);padding:7px 13px;border-radius:100px;
+  transition:background .2s,color .2s;}
 .lang-switch button:hover:not(.active){color:var(--ink)}
+.lang-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lang-switch button.active{background:rgba(75,65,245,.1);color:var(--accent)}
 
 /* ---------- HERO (главная) ---------- */
 .hero{padding:72px 0 76px}
