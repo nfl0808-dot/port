@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRM для авиакомпаний · Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="sig" href="index.html"><b>●</b> Имя Фамилия</a>
+    <nav>
+      <a href="index.html#projects">Проекты</a>
+      <a href="index.html#about">Про меня</a>
+      <a href="#" data-resume>Резюме ↗</a>
+    </nav>
+  </div>
+</div>
+
+<section class="case-hero">
+  <div class="wrap">
+    <a class="back-link" href="index.html">← Все проекты</a>
+    <div class="case-meta"><span class="tag">Сирена-Трэвел</span><span class="tag">B2G · Авиация</span><span class="tag">2024</span></div>
+    <h1>Перенёс 20-летнюю desktop-систему регистрации рейсов в веб и переосмыслил её логику</h1>
+    <p class="role-line"><b>Роль:</b> дизайн полного цикла, от исследования до релиза. Продолжил вести продукт и после передачи в разработку.</p>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap">
+    <div class="cover" style="--cover: url('cover-1.jpg')"><div class="ph">обложка кейса — 1600×900</div></div>
+
+    <p>Сирена-Трэвел — лидер дистрибуции авиационных услуг в России. Их CRM закрывает весь цикл подготовки рейса: от бронирования пассажира до регистрации и вылета.</p>
+
+    <h2>Проблема</h2>
+    <p>Систему собрали 20 лет назад как desktop-приложение. Работать можно только с той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а перенести продукт в веб и разобраться со всем, что накопилось за 20 лет эксплуатации.</p>
+
+    <h2>Что я сделал</h2>
+    <p><strong>Сначала пошёл к разработке, а не к макетам.</strong> Обсудил с инженерами, как им будет быстрее переносить дизайн, и выбрал Material Design осознанно: у команды уже был опыт с Material UI React, значит компоненты перенесутся быстро. Адаптировал 40+ страниц компонентов под существующую палитру.</p>
+
+    <div class="shots">
+      <div class="shot"><span class="ic">🖼</span><span class="lbl">скриншот · библиотека компонентов</span></div>
+    </div>
+
+    <p><strong>Провёл полевое исследование.</strong> 10 интервью с агентами регистрации и технологами по рейсам, плюс выезд в Домодедово. Нашёл три ключевые проблемы:</p>
+    <ul>
+      <li>Регистрация одного пассажира занимала не менее 5 минут — против ~2 минут в вебе у Emirates.</li>
+      <li>Визуальный интерфейс устарел за 20 лет.</li>
+      <li>Часть функций отсутствовала — это подсветил конкурентный анализ.</li>
+    </ul>
+
+    <p><strong>Сфокусировал скоуп осознанно.</strong> Вместе с продактом выбрал два флоу, регистрацию и посадку, потому что их можно было быстро протестировать после релиза. Спроектировал блок-схемы до того, как взялся за макеты.</p>
+
+    <div class="shots">
+      <div class="shot"><span class="ic">🖼</span><span class="lbl">скриншот · флоу регистрации, до/после</span></div>
+      <div class="shot"><span class="ic">🖼</span><span class="lbl">скриншот · флоу посадки на рейс</span></div>
+    </div>
+
+    <p><strong>Протестировал решение в два круга.</strong> 20 онлайн-тестов через Pathway, затем выезды в 10 авиакомпаний и два аэропорта. За 5-недельный спринт выпустил MVP (frontend, backend, API) и запустил месячную тестовую эксплуатацию.</p>
+
+    <h2>Результат</h2>
+    <div class="result">
+      <div class="kpi"><b>40+</b><span>страниц компонентов</span></div>
+      <div class="kpi"><b>2 флоу</b><span>регистрация + посадка</span></div>
+      <div class="kpi"><b>5 недель</b><span>до MVP</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="case-nav">
+    <a href="index.html">← Все проекты</a>
+    <a href="case-realty.html">Следующий кейс: CRM для недвижимости →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-meta">
+    <span>© 2026 · Имя Фамилия</span>
+    <span>Продуктовый дизайнер</span>
+  </div>
+</footer>
+
+<script>
+var RESUME_URL = "";
+if(RESUME_URL){document.querySelectorAll('[data-resume]').forEach(function(a){a.href=RESUME_URL;});}
+</script>
+</body>
+</html>
