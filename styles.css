@@ -117,14 +117,14 @@ section{padding:88px 0}
 
 /* ---------- про меня ---------- */
 .about{}
-.about .body{max-width:62ch}
+.about .body{}
 .about p{font-size:20px;color:var(--ink-soft);margin-bottom:20px;letter-spacing:-.012em}
 .about p strong{color:var(--ink);font-weight:600}
 
 /* ---------- контакты ---------- */
 .contact{}
 .contact h2{font-weight:600;font-size:clamp(30px,4.6vw,52px);
-  margin-bottom:32px;letter-spacing:-.03em;max-width:16ch;line-height:1.02}
+  margin-bottom:32px;letter-spacing:-.03em;line-height:1.02}
 .links{display:flex;flex-direction:column;gap:2px}
 .links a{display:flex;justify-content:space-between;align-items:center;
   padding:20px 4px;border-bottom:1px solid var(--line);text-decoration:none;
