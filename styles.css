@@ -65,6 +65,8 @@ nav a:hover{color:var(--ink)}
 .chip{font-size:13px;font-weight:500;color:var(--ink);
   background:var(--paper);border:1px solid var(--line);
   padding:8px 14px;border-radius:100px;}
+.chip.chip-accent{color:var(--accent);background:rgba(75,65,245,.08);
+  border-color:rgba(75,65,245,.25);font-weight:600;}
 
 /* ---------- секции ---------- */
 section{padding:88px 0}
