@@ -105,16 +105,6 @@ section{padding:88px 0}
 .cover .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft)}
 
-/* ---------- что ещё умею ---------- */
-.extra{}
-.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.skill{background:var(--paper);border:1px solid var(--line);
-  border-radius:16px;padding:28px 28px 30px;transition:border-color .2s,transform .2s;}
-.skill:hover{border-color:var(--accent);transform:translateY(-2px)}
-.skill h3{font-size:20px;font-weight:600;margin-bottom:10px;letter-spacing:-.015em}
-.skill p{color:var(--ink-soft);font-size:15.5px;max-width:42ch}
-.skill .ic{font-size:22px;margin-bottom:16px;display:block}
-
 /* ---------- про меня ---------- */
 .about{}
 .about .body{}
@@ -193,7 +183,6 @@ footer{padding:48px 0 64px}
   .wrap{padding:0 20px}
   section{padding:60px 0}
   nav a{margin-left:14px}
-  .skills{grid-template-columns:1fr}
   .result .kpi{min-width:calc(50% - 8px)}
   .case-hero{padding-top:36px}
 }
