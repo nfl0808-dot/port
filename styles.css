@@ -125,7 +125,7 @@ section{padding:88px 0}
 .contact{}
 .contact h2{font-weight:600;font-size:clamp(30px,4.6vw,52px);
   margin-bottom:32px;letter-spacing:-.03em;max-width:16ch;line-height:1.02}
-.links{display:flex;flex-direction:column;gap:2px;max-width:540px}
+.links{display:flex;flex-direction:column;gap:2px}
 .links a{display:flex;justify-content:space-between;align-items:center;
   padding:20px 4px;border-bottom:1px solid var(--line);text-decoration:none;
   font-size:17px;font-weight:500;transition:padding .2s,color .2s;}
