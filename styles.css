@@ -174,18 +174,24 @@ footer{padding:48px 0 64px}
 .shot .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.04em;
   text-transform:uppercase;color:var(--ink-soft);}
 
-/* Карусель макетов */
-.carousel{margin:8px 0 40px;position:relative;}
-.carousel-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
-  padding-bottom:10px;-webkit-overflow-scrolling:touch;}
-.carousel-track::-webkit-scrollbar{height:6px}
-.carousel-track::-webkit-scrollbar-track{background:transparent}
-.carousel-track::-webkit-scrollbar-thumb{background:var(--line);border-radius:100px}
-.carousel-slide{flex:0 0 280px;scroll-snap-align:start;}
-.carousel-slide .shot{aspect-ratio:4/3;margin:0}
-@media (min-width:700px){
-  .carousel-slide{flex:0 0 320px}
-}
+/* Карусель макетов — переключение стрелками, один макет на экран */
+.carousel{position:relative;margin:8px 0 40px;}
+.carousel-viewport{overflow:hidden;border-radius:16px;}
+.carousel-track{display:flex;transition:transform .35s ease;}
+.carousel-slide{flex:0 0 100%;}
+.carousel-slide .shot{aspect-ratio:16/10;margin:0;border-radius:0;border:1.5px dashed var(--line);}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink);font-size:20px;line-height:1;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,color .2s,background .2s;}
+.carousel-btn:hover{border-color:var(--accent);color:var(--accent)}
+.carousel-btn.prev{left:12px}
+.carousel-btn.next{right:12px}
+.carousel-counter{position:absolute;right:14px;bottom:14px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  color:var(--ink-soft);background:rgba(247,247,245,.9);
+  border:1px solid var(--line);border-radius:100px;padding:4px 10px;}
 
 .case-nav{padding:48px 0;display:flex;
   justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
