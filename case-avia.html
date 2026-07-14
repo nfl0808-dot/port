@@ -47,33 +47,46 @@
     <p data-i18n="problem_p">Систему собрали 20 лет назад как desktop-приложение. Работать можно только с той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а перенести продукт в веб и разобраться со всем, что накопилось за 20 лет эксплуатации.</p>
 
     <h2 data-i18n="h2_what">Что я сделал</h2>
-    <p data-i18n="what_p1"><strong>Сначала пошёл к разработке, а не к макетам.</strong> Обсудил с инженерами, как им будет быстрее переносить дизайн, и выбрал Material Design осознанно: у команды уже был опыт с Material UI React, значит компоненты перенесутся быстро. Адаптировал 40+ страниц компонентов под существующую палитру.</p>
+    <p data-i18n="what_p1"><strong>Сначала пошёл к разработке, а не приступил к макетам.</strong> Обсудил с командой, как им будет быстрее переносить дизайн, и остановились на дизайн-системе Material UI потому, что в других продуктах компании ведётся разработка на библиотеке Material UI React, а значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до начала работы с ним.</p>
 
     <div class="shots">
-      <div class="shot"><span class="ic">🖼</span><span class="lbl" data-i18n="shot1_lbl">скриншот · библиотека компонентов</span></div>
+      <div class="shot"><span class="ic">🖼</span><span class="lbl" data-i18n="shot1_lbl">скриншот · продукт до начала работы</span></div>
     </div>
 
-    <p data-i18n="what_p2"><strong>Провёл customer research и guerrilla-тестирование.</strong> 10 интервью с агентами регистрации и технологами по рейсам, плюс выезд в Домодедово. Нашёл три ключевые проблемы:</p>
+    <p data-i18n="what_p2"><strong>Дальше пошёл в исследования.</strong> Провёл customer research прямо в аэропортах. Было 10 интервью с агентами по регистрации пассажиров и технологами, которые готовят рейсы. Нашёл три ключевые проблемы:</p>
     <ul>
       <li data-i18n="li1">Регистрация одного пассажира занимала не менее 5 минут — против ~2 минут в вебе у Emirates.</li>
       <li data-i18n="li2">Визуальный интерфейс устарел за 20 лет.</li>
-      <li data-i18n="li3">Часть функций отсутствовала — это подсветил конкурентный анализ.</li>
+      <li data-i18n="li3">Часть функций отсутствовала в продукте вообще — это подсветил конкурентный анализ.</li>
     </ul>
 
-    <p data-i18n="what_p3"><strong>Сфокусировал скоуп осознанно.</strong> Вместе с продактом выбрал два флоу, регистрацию и посадку, потому что их можно было быстро протестировать после релиза. С дата-сайентистами определили метрики успеха и то, какие события логировать, чтобы после теста было видно, что сработало. Спроектировал wireframes и блок-схемы до того, как взялся за прототипы.</p>
+    <p data-i18n="what_p3">Вместе с продактом выбрали два флоу, регистрацию и посадку, потому что их можно было быстро протестировать после релиза. С аналитиками определили метрики успеха и то, какие события логировать, чтобы после теста было видно, что сработало. После этого ушёл проектировать wireframes и блок-схемы, прежде чем рисовать макеты.</p>
 
-    <div class="shots">
-      <div class="shot"><span class="ic">🖼</span><span class="lbl" data-i18n="shot2_lbl">скриншот · флоу регистрации, до/после</span></div>
-      <div class="shot"><span class="ic">🖼</span><span class="lbl" data-i18n="shot3_lbl">скриншот · флоу посадки на рейс</span></div>
+    <h2 data-i18n="h2_mockups">Какие получились макеты</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-1.jpg')"><span class="ic">🖼</span><span class="lbl">макет 1</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-2.jpg')"><span class="ic">🖼</span><span class="lbl">макет 2</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-3.jpg')"><span class="ic">🖼</span><span class="lbl">макет 3</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-4.jpg')"><span class="ic">🖼</span><span class="lbl">макет 4</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-5.jpg')"><span class="ic">🖼</span><span class="lbl">макет 5</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-6.jpg')"><span class="ic">🖼</span><span class="lbl">макет 6</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-7.jpg')"><span class="ic">🖼</span><span class="lbl">макет 7</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-8.jpg')"><span class="ic">🖼</span><span class="lbl">макет 8</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-9.jpg')"><span class="ic">🖼</span><span class="lbl">макет 9</span></div></div>
+        <div class="carousel-slide"><div class="shot" style="--cover:url('mockup-10.jpg')"><span class="ic">🖼</span><span class="lbl">макет 10</span></div></div>
+      </div>
     </div>
 
-    <p data-i18n="what_p4"><strong>Протестировал решение в два круга.</strong> 20 онлайн-тестов через Pathway, затем выезды в 10 авиакомпаний и два аэропорта. За 5-недельный спринт выпустил MVP (frontend, backend, API) и запустил месячную тестовую эксплуатацию. По её итогам вместе с дата-командой разобрал метрики использования и зафиксировал, что стоит доработать в следующей итерации.</p>
+    <p data-i18n="what_p4">После макетов ушли в тесты. Было 20 онлайн-тестов через Pathway, затем выезды в 10 авиакомпаний и два аэропорта, где показывали разные варианты двух flow. Отвечали на вопросы и объясняли, как всё будет работать, ведь по сути система стала другой.</p>
 
-    <h2 data-i18n="h2_result">Результат</h2>
+    <p data-i18n="what_p5">После тестов ушли в разработку MVP. Вносили правки по макетам, и параллельно команда переделывала backend и API. За 5-недельный спринт мы справились и передали в месячную тестовую эксплуатацию, в авиакомпанию. По её итогам вместе с аналитиками проверили метрики использования и зафиксировали, что стоит доработать в следующей итерации. Сейчас работаю над расширением этих флоу до полноценных.</p>
+
+    <h2 data-i18n="h2_result">Итоги тестового периода</h2>
     <div class="result">
-      <div class="kpi"><b data-i18n="kpi1_b">40+</b><span data-i18n="kpi1_span">страниц компонентов</span></div>
-      <div class="kpi"><b data-i18n="kpi2_b">2 флоу</b><span data-i18n="kpi2_span">регистрация + посадка</span></div>
-      <div class="kpi"><b data-i18n="kpi3_b">5 недель</b><span data-i18n="kpi3_span">до MVP</span></div>
+      <div class="kpi"><b data-i18n="kpi1_b">6,000–8,000</b><span data-i18n="kpi1_span">MAU</span></div>
+      <div class="kpi"><b data-i18n="kpi2_b">~70</b><span data-i18n="kpi2_span">среднее кол-во юзеров</span></div>
+      <div class="kpi"><b data-i18n="kpi3_b">~3 минуты</b><span data-i18n="kpi3_span">время регистрации пассажира</span></div>
     </div>
   </div>
 </section>
@@ -113,23 +126,23 @@ window.TRANSLATIONS = {
   h2_problem: {ru:"Проблема", en:"The problem"},
   problem_p: {ru:"Систему собрали 20 лет назад как desktop-приложение. Работать можно только с той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а перенести продукт в веб и разобраться со всем, что накопилось за 20 лет эксплуатации.", en:"The system was built 20 years ago as a desktop application. It only runs on the machine it's installed on, with no remote access. The task wasn't to redraw the interface, it was to move the product to the web and work through everything that had piled up over 20 years of use."},
   h2_what: {ru:"Что я сделал", en:"What I did"},
-  what_p1: {ru:'<strong>Сначала пошёл к разработке, а не к макетам.</strong> Обсудил с инженерами, как им будет быстрее переносить дизайн, и выбрал Material Design осознанно: у команды уже был опыт с Material UI React, значит компоненты перенесутся быстро. Адаптировал 40+ страниц компонентов под существующую палитру.', en:"<strong>Started with engineering, not with mockups.</strong> Talked to developers about how they could ship the design fastest, and deliberately chose Material Design: the team already had experience with Material UI React, so components would translate quickly. Adapted 40+ pages of components to fit the existing palette."},
-  shot1_lbl: {ru:"скриншот · библиотека компонентов", en:"screenshot · component library"},
-  what_p2: {ru:'<strong>Провёл customer research и guerrilla-тестирование.</strong> 10 интервью с агентами регистрации и технологами по рейсам, плюс выезд в Домодедово. Нашёл три ключевые проблемы:', en:"<strong>Ran customer research and guerrilla testing.</strong> 10 interviews with check-in agents and flight technologists, plus a site visit to Domodedovo airport. Found three key problems:"},
+  what_p1: {ru:'<strong>Сначала пошёл к разработке, а не приступил к макетам.</strong> Обсудил с командой, как им будет быстрее переносить дизайн, и остановились на дизайн-системе Material UI потому, что в других продуктах компании ведётся разработка на библиотеке Material UI React, а значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до начала работы с ним.', en:"<strong>Started with engineering, not with mockups.</strong> Discussed with the team how they could ship the design fastest, and we settled on the Material UI design system, since other products at the company were already built on the Material UI React library, meaning the components would just need to be \u201cre-skinned.\u201d Below is a screenshot of what the product looked like before I started working on it."},
+  shot1_lbl: {ru:"скриншот · продукт до начала работы", en:"screenshot · the product before the redesign"},
+  what_p2: {ru:'<strong>Дальше пошёл в исследования.</strong> Провёл customer research прямо в аэропортах. Было 10 интервью с агентами по регистрации пассажиров и технологами, которые готовят рейсы. Нашёл три ключевые проблемы:', en:"<strong>Next came research.</strong> Ran customer research right at the airports: 10 interviews with passenger check-in agents and the technologists who prepare flights. Found three key problems:"},
   li1: {ru:"Регистрация одного пассажира занимала не менее 5 минут — против ~2 минут в вебе у Emirates.", en:"Checking in a single passenger took at least 5 minutes, versus about 2 minutes in Emirates' web check-in."},
   li2: {ru:"Визуальный интерфейс устарел за 20 лет.", en:"The visual interface hadn't changed in 20 years."},
-  li3: {ru:"Часть функций отсутствовала — это подсветил конкурентный анализ.", en:"Competitive analysis showed some features were missing entirely."},
-  what_p3: {ru:'<strong>Сфокусировал скоуп осознанно.</strong> Вместе с продактом выбрал два флоу, регистрацию и посадку, потому что их можно было быстро протестировать после релиза. С дата-сайентистами определили метрики успеха и то, какие события логировать, чтобы после теста было видно, что сработало. Спроектировал wireframes и блок-схемы до того, как взялся за прототипы.', en:"<strong>Focused the scope deliberately.</strong> Together with the product manager, picked two flows, check-in and boarding, because they could be tested quickly after release. Worked with data scientists to define success metrics and what events to log, so it would be clear after testing what worked. Sketched wireframes and flowcharts before moving to prototypes."},
-  shot2_lbl: {ru:"скриншот · флоу регистрации, до/после", en:"screenshot · check-in flow, before/after"},
-  shot3_lbl: {ru:"скриншот · флоу посадки на рейс", en:"screenshot · boarding flow"},
-  what_p4: {ru:'<strong>Протестировал решение в два круга.</strong> 20 онлайн-тестов через Pathway, затем выезды в 10 авиакомпаний и два аэропорта. За 5-недельный спринт выпустил MVP (frontend, backend, API) и запустил месячную тестовую эксплуатацию. По её итогам вместе с дата-командой разобрал метрики использования и зафиксировал, что стоит доработать в следующей итерации.', en:"<strong>Tested the solution in two rounds.</strong> 20 online tests through Pathway, then site visits to 10 airlines and two airports. Shipped an MVP (frontend, backend, API) in a 5-week sprint and launched a month-long test run. Afterwards, reviewed usage metrics with the data team and logged what to improve in the next iteration."},
-  h2_result: {ru:"Результат", en:"Result"},
-  kpi1_b: {ru:"40+", en:"40+"},
-  kpi1_span: {ru:"страниц компонентов", en:"component pages"},
-  kpi2_b: {ru:"2 флоу", en:"2 flows"},
-  kpi2_span: {ru:"регистрация + посадка", en:"check-in + boarding"},
-  kpi3_b: {ru:"5 недель", en:"5 weeks"},
-  kpi3_span: {ru:"до MVP", en:"to MVP"},
+  li3: {ru:"Часть функций отсутствовала в продукте вообще — это подсветил конкурентный анализ.", en:"Some features were missing from the product entirely — competitive analysis brought that to light."},
+  what_p3: {ru:"Вместе с продактом выбрали два флоу, регистрацию и посадку, потому что их можно было быстро протестировать после релиза. С аналитиками определили метрики успеха и то, какие события логировать, чтобы после теста было видно, что сработало. После этого ушёл проектировать wireframes и блок-схемы, прежде чем рисовать макеты.", en:"Together with the product manager, we picked two flows, check-in and boarding, because they could be tested quickly after release. Worked with analysts to define success metrics and what events to log, so it would be clear after testing what worked. Then I moved on to wireframes and flowcharts before drawing any mockups."},
+  h2_mockups: {ru:"Какие получились макеты", en:"How the mockups turned out"},
+  what_p4: {ru:"После макетов ушли в тесты. Было 20 онлайн-тестов через Pathway, затем выезды в 10 авиакомпаний и два аэропорта, где показывали разные варианты двух flow. Отвечали на вопросы и объясняли, как всё будет работать, ведь по сути система стала другой.", en:"After the mockups, we moved into testing: 20 online tests through Pathway, then site visits to 10 airlines and two airports, showing different variants of the two flows. We answered questions and explained how everything would work, since the system had essentially become a different one."},
+  what_p5: {ru:"После тестов ушли в разработку MVP. Вносили правки по макетам, и параллельно команда переделывала backend и API. За 5-недельный спринт мы справились и передали в месячную тестовую эксплуатацию, в авиакомпанию. По её итогам вместе с аналитиками проверили метрики использования и зафиксировали, что стоит доработать в следующей итерации. Сейчас работаю над расширением этих флоу до полноценных.", en:"After testing, we moved into MVP development: adjusting the mockups while the team rebuilt the backend and API in parallel. We shipped it in a 5-week sprint and handed it off for a month-long test run at an airline. Afterwards, we reviewed usage metrics with the analysts and logged what to improve in the next iteration. I'm currently working on expanding these flows into full-fledged ones."},
+  h2_result: {ru:"Итоги тестового периода", en:"Results of the test period"},
+  kpi1_b: {ru:"6,000–8,000", en:"6,000–8,000"},
+  kpi1_span: {ru:"MAU", en:"MAU"},
+  kpi2_b: {ru:"~70", en:"~70"},
+  kpi2_span: {ru:"среднее кол-во юзеров", en:"average number of users"},
+  kpi3_b: {ru:"~3 минуты", en:"~3 minutes"},
+  kpi3_span: {ru:"время регистрации пассажира", en:"passenger check-in time"},
   casenav_next: {ru:"Следующий кейс: CRM для недвижимости →", en:"Next case: Real estate CRM →"},
   footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"}
 };
