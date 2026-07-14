@@ -179,7 +179,7 @@ footer{padding:48px 0 64px}
 .carousel-viewport{overflow:hidden;border-radius:16px;}
 .carousel-track{display:flex;transition:transform .35s ease;}
 .carousel-slide{flex:0 0 100%;}
-.carousel-slide .shot{aspect-ratio:16/10;margin:0;border-radius:0;border:1.5px dashed var(--line);}
+.carousel-slide .shot{aspect-ratio:1680/904;margin:0;border-radius:0;border:1.5px dashed var(--line);}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);
   width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
   background:var(--paper);color:var(--ink);font-size:20px;line-height:1;
