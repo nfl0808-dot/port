@@ -100,8 +100,7 @@ section{padding:88px 0}
 /* обложка (общая для карточек и детальных страниц) */
 .cover{aspect-ratio:16/9;border-radius:16px;overflow:hidden;
   border:1px solid var(--line);
-  background:linear-gradient(135deg,rgba(75,65,245,.08),rgba(17,17,19,.03)),
-    var(--cover,#EEEEEA);background-size:cover;background-position:center;position:relative;}
+  background:var(--cover,#EEEEEA);background-size:cover;background-position:center;position:relative;}
 .cover .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft)}
 
