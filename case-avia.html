@@ -50,8 +50,19 @@
     <h2 data-i18n="h2_what">Что я сделал</h2>
     <p data-i18n="what_p1"><strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.</p>
 
-    <div class="shots">
-      <div class="shot" style="--cover:url('before.jpg')"></div>
+    <div class="mockup-feed">
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-1.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before1_caption">Список пассажиров на посадку.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-2.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before2_caption">Регистрация пассажира.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-3.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before3_caption">Добавление услуг к&nbsp;пассажиру.</p>
+      </div>
     </div>
 
     <p data-i18n="what_p2"><strong>Дальше пошёл в&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах. Было 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:</p>
@@ -67,43 +78,35 @@
     <div class="mockup-feed">
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-1.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup1_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup1_caption">Таблица пассажиров после начала регистрации.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-2.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup2_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup2_caption">Карта посадочных мест на&nbsp;этапе регистрации пассажира.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-3.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup3_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup3_caption">Этап проверки документов у&nbsp;группы пассажиров.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-4.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup4_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup4_caption">Выбор мест для&nbsp;группы регистрируемых пассажиров.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-5.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup5_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup5_caption">Добавление багажа и&nbsp;ручной клади пассажирам.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-6.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup6_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup6_caption">Посадка. Список пассажиров и&nbsp;карта мест.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-7.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup7_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup7_caption">Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.</p>
       </div>
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-8.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup8_caption"><em>Добавьте описание этого макета.</em></p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('mockup-9.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup9_caption"><em>Добавьте описание этого макета.</em></p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('mockup-10.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup10_caption"><em>Добавьте описание этого макета.</em></p>
+        <p class="mockup-caption" data-i18n="mockup8_caption">Неудачная посадка пассажира с&nbsp;несколькими проблемами.</p>
       </div>
     </div>
 
@@ -167,22 +170,23 @@ window.TRANSLATIONS = {
   problem_p: {ru:"Систему собрали 20 лет назад как desktop-приложение. Работать можно только с&nbsp;той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а&nbsp;перенести продукт в&nbsp;веб и&nbsp;разобраться со&nbsp;всем, что&nbsp;накопилось за&nbsp;20 лет эксплуатации.", en:"The system was built 20 years ago as a desktop application. It only runs on the machine it's installed on, with no remote access. The task wasn't to redraw the interface, it was to move the product to the web and work through everything that had piled up over 20 years of use."},
   h2_what: {ru:"Что я сделал", en:"What I did"},
   what_p1: {ru:'<strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.', en:"<strong>Started with engineering, not with mockups.</strong> Discussed with the team how they could ship the design fastest, and I settled on the Material UI design system, since other products at the company were already built on the Material UI React library, meaning the components would just need to be \u201cre-skinned.\u201d Below is a screenshot of what the product looked like before I started working on it."},
+  before1_caption: {ru:"Список пассажиров на посадку.", en:"Passenger boarding list."},
+  before2_caption: {ru:"Регистрация пассажира.", en:"Passenger check-in."},
+  before3_caption: {ru:"Добавление услуг к&nbsp;пассажиру.", en:"Adding services to a passenger."},
   what_p2: {ru:'<strong>Дальше пошёл в&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах. Было 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:', en:"<strong>Next came research.</strong> Ran customer research right at the airports: 10 interviews with passenger check-in agents and the technologists who prepare flights. Found three key problems:"},
   li1: {ru:"Регистрация одного пассажира занимала не&nbsp;менее 5 минут — против ~2 минут в&nbsp;вебе у&nbsp;Emirates.", en:"Checking in a single passenger took at least 5 minutes, versus about 2 minutes in Emirates' web check-in."},
   li2: {ru:"Визуальный интерфейс устарел за&nbsp;20 лет.", en:"The visual interface hadn't changed in 20 years."},
   li3: {ru:"Часть функций отсутствовала в&nbsp;продукте вообще — это&nbsp;подсветил конкурентный анализ.", en:"Some features were missing from the product entirely — competitive analysis brought that to light."},
   what_p3: {ru:"Вместе с&nbsp;продактом выбрал два флоу, регистрацию и&nbsp;посадку, потому что их можно было быстро протестировать после релиза. С&nbsp;аналитиками определил метрики успеха и&nbsp;то, какие события логировать, чтобы после теста было видно, что&nbsp;сработало. После этого ушёл проектировать wireframes и&nbsp;блок-схемы, прежде чем&nbsp;рисовать макеты.", en:"Together with the product manager, I picked two flows, check-in and boarding, because they could be tested quickly after release. Worked with analysts to define success metrics and what events to log, so it would be clear after testing what worked. Then I moved on to wireframes and flowcharts before drawing any mockups."},
   h2_mockups: {ru:"Какие получились макеты", en:"How the mockups turned out"},
-  mockup1_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup2_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup3_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup4_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup5_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup6_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup7_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup8_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup9_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
-  mockup10_caption: {ru:"<em>Добавьте описание этого макета.</em>", en:"<em>Add a caption for this mockup.</em>"},
+  mockup1_caption: {ru:"Таблица пассажиров после начала регистрации.", en:"Passenger table after check-in starts."},
+  mockup2_caption: {ru:"Карта посадочных мест на&nbsp;этапе регистрации пассажира.", en:"Seat map at the passenger check-in stage."},
+  mockup3_caption: {ru:"Этап проверки документов у&nbsp;группы пассажиров.", en:"Document check for a group of passengers."},
+  mockup4_caption: {ru:"Выбор мест для&nbsp;группы регистрируемых пассажиров.", en:"Seat selection for a group of passengers being checked in."},
+  mockup5_caption: {ru:"Добавление багажа и&nbsp;ручной клади пассажирам.", en:"Adding baggage and carry-on for passengers."},
+  mockup6_caption: {ru:"Посадка. Список пассажиров и&nbsp;карта мест.", en:"Boarding. Passenger list and seat map."},
+  mockup7_caption: {ru:"Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.", en:"Successful boarding of a passenger with a purchased Extra Seat service."},
+  mockup8_caption: {ru:"Неудачная посадка пассажира с&nbsp;несколькими проблемами.", en:"Unsuccessful boarding of a passenger with several issues."},
   what_p4: {ru:"<strong>После макетов ушёл в&nbsp;тесты.</strong> Было 20 онлайн-тестов через Pathway, затем выезды в&nbsp;10 авиакомпаний и&nbsp;два аэропорта, где показывал разные варианты двух flow. Отвечал на&nbsp;вопросы и&nbsp;объяснял, как всё будет работать, ведь по&nbsp;сути система стала другой.", en:"<strong>After the mockups, I moved into testing.</strong> 20 online tests through Pathway, then site visits to 10 airlines and two airports, showing different variants of the two flows. I answered questions and explained how everything would work, since the system had essentially become a different one."},
   what_p5: {ru:"<strong>После тестов ушёл в&nbsp;разработку MVP.</strong> Вносил правки по&nbsp;макетам, и&nbsp;параллельно команда переделывала backend и&nbsp;API. За 5-недельный спринт я справился и&nbsp;передал в&nbsp;месячную тестовую эксплуатацию, в&nbsp;авиакомпанию. По её итогам вместе с&nbsp;аналитиками проверил метрики использования и&nbsp;зафиксировал, что&nbsp;стоит доработать в&nbsp;следующей итерации. Сейчас работаю над расширением этих флоу до&nbsp;полноценных.", en:"<strong>After testing, I moved into MVP development.</strong> I adjusted the mockups while the team rebuilt the backend and API in parallel. I shipped it in a 5-week sprint and handed it off for a month-long test run at an airline. Afterwards, I reviewed usage metrics with the analysts and logged what to improve in the next iteration. I'm currently working on expanding these flows into full-fledged ones."},
   h2_result: {ru:"Итоги тестового периода", en:"Results of the test period"},
