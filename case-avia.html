@@ -18,7 +18,7 @@
       <nav>
         <a href="index.html#projects" data-i18n="nav_projects">Проекты</a>
         <a href="index.html#about" data-i18n="nav_about">Про меня</a>
-        <a href="#" data-resume data-i18n="nav_resume">Резюме ↗</a>
+        <a href="#" data-i18n="nav_resume" data-i18n-href="resume_url">Резюме ↗</a>
       </nav>
       <div class="lang-switch">
         <button data-lang="ru" class="active" aria-pressed="true">RU</button>
@@ -148,16 +148,13 @@
 </footer>
 
 <script>
-var RESUME_URL = "";
-if(RESUME_URL){document.querySelectorAll('[data-resume]').forEach(function(a){a.href=RESUME_URL;});}
-</script>
-<script>
 window.TRANSLATIONS = {
   __title: {ru:"CRM для авиакомпаний · Портфолио", en:"Airline CRM · Portfolio"},
   sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
   nav_projects: {ru:"Проекты", en:"Projects"},
   nav_about: {ru:"Про меня", en:"About"},
   nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
+  resume_url: {ru:"Melnikov%20Dmitriy_Resume.pdf", en:"Melnikov%20Dmirity_CV.pdf"},
   back_link: {ru:"← Все проекты", en:"← All projects"},
   tag1: {ru:"Сирена-Трэвел", en:"Sirena-Travel"},
   tag2: {ru:"B2G · Авиация", en:"B2G · Aviation"},

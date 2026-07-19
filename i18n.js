@@ -13,7 +13,7 @@
      в localStorage и больше НИКОГДА не переопределяется по IP,
      ни на этой странице, ни на других страницах сайта.
    Чтобы добавить новый переводимый элемент:
-     1. Добавь ему data-i18n="имя_ключа"
+     1. Добавь ему data-i18n="имя_ключа" (для текста) или data-i18n-href="имя_ключа" (для ссылки href)
      2. Добавь имя_ключа: {ru:"...", en:"..."} в TRANSLATIONS на странице
    ============================================================ */
 (function(){
@@ -27,6 +27,10 @@
     document.querySelectorAll('[data-i18n]').forEach(function(el){
       var entry = dict[el.getAttribute('data-i18n')];
       if(entry && entry[l] !== undefined){ el.innerHTML = entry[l]; }
+    });
+    document.querySelectorAll('[data-i18n-href]').forEach(function(el){
+      var entry = dict[el.getAttribute('data-i18n-href')];
+      if(entry && entry[l] !== undefined){ el.setAttribute('href', entry[l]); }
     });
     if(dict.__title && dict.__title[l]){ document.title = dict.__title[l]; }
     document.querySelectorAll('.lang-switch button').forEach(function(btn){

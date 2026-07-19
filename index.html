@@ -18,7 +18,7 @@
       <nav>
         <a href="#projects" data-i18n="nav_projects">Проекты</a>
         <a href="#about" data-i18n="nav_about">Про меня</a>
-        <a href="#" data-resume data-i18n="nav_resume">Резюме ↗</a>
+        <a href="#" data-i18n="nav_resume" data-i18n-href="resume_url">Резюме ↗</a>
       </nav>
       <div class="lang-switch">
         <button data-lang="ru" class="active" aria-pressed="true">RU</button>
@@ -67,7 +67,7 @@
         </div>
       </a>
 
-      <!-- КАРТОЧКА КЕЙСА 2 — временно отключена, чтобы вернуть: убрать <!-- и --> ниже
+      <!-- КАРТОЧКА КЕЙСА 2 — временно отключена
       <a class="case-card" href="case-realty.html">
         <div class="cover" style="--cover: url('cover-2.jpg')"></div>
         <div class="case-card-body">
@@ -105,9 +105,9 @@
   <div class="wrap">
     <h2 data-i18n="contact_h2">Давайте сделаем хороший продукт вместе</h2>
     <div class="links">
-      <a href="mailto:you@email.com"><span data-i18n="contact_email_label">Почта</span><span class="k">you@email.com</span></a>
-      <a href="https://t.me/username"><span data-i18n="contact_tg_label">Telegram</span><span class="k">@username</span></a>
-      <a href="#" data-resume><span data-i18n="contact_resume_label">Резюме (PDF)</span><span class="k" data-i18n="contact_resume_val">открыть ↗</span></a>
+      <a href="mailto:dmelnikov93@yandex.ru" data-i18n-href="contact_email_href"><span data-i18n="contact_email_label">Почта</span><span class="k" data-i18n="contact_email_val">dmelnikov93@yandex.ru</span></a>
+      <a href="https://t.me/melamid"><span data-i18n="contact_tg_label">Telegram</span><span class="k">@melamid</span></a>
+      <a href="#" data-i18n-href="resume_url"><span data-i18n="contact_resume_label">Резюме (PDF)</span><span class="k" data-i18n="contact_resume_val">открыть ↗</span></a>
     </div>
   </div>
 </section>
@@ -120,16 +120,13 @@
 </footer>
 
 <script>
-var RESUME_URL = ""; // вставь ссылку на резюме — подставится во все места на всех страницах
-if(RESUME_URL){document.querySelectorAll('[data-resume]').forEach(function(a){a.href=RESUME_URL;});}
-</script>
-<script>
 window.TRANSLATIONS = {
   __title: {ru:"Дима Мельников Портфолио", en:"Dima Melnikov Portfolio"},
   sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
   nav_projects: {ru:"Проекты", en:"Projects"},
   nav_about: {ru:"Про меня", en:"About"},
   nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
+  resume_url: {ru:"Melnikov%20Dmitriy_Resume.pdf", en:"Melnikov%20Dmirity_CV.pdf"},
   hero_badge: {ru:"Открыт к предложениям", en:"Open to opportunities"},
   hero_h1: {ru:'Продуктовый дизайнер <em>B2B- и B2G-продуктов</em>', en:'Product designer for <em>B2B and B2G products</em>'},
   hero_lede1: {ru:'Сейчас делаю <strong>CRM систему для авиакомпаний и аэропортов</strong>. Ей уже пользуются больше 80% компаний в СНГ. Ищу и предлагаю решения на основе метрик и целей бизнеса.', en:"Right now I'm building a <strong>CRM system for airlines and airports</strong>. It's already used by more than 80% of companies across the CIS. I look for and propose solutions based on metrics and business goals."},
@@ -162,6 +159,8 @@ window.TRANSLATIONS = {
   about_p4: {ru:"Учился на металлурга, магистр по сталям и сплавам — привычка к системному мышлению реально помогает в проектировании сложных структур.", en:"Trained as a metallurgical engineer, with a master's in steels and alloys — that habit of systems thinking genuinely helps when designing complex structures."},
   contact_h2: {ru:"Давайте сделаем хороший продукт вместе", en:"Let's build a great product together"},
   contact_email_label: {ru:"Почта", en:"Email"},
+  contact_email_href: {ru:"mailto:dmelnikov93@yandex.ru", en:"mailto:dimonmel@yahoo.com"},
+  contact_email_val: {ru:"dmelnikov93@yandex.ru", en:"dimonmel@yahoo.com"},
   contact_tg_label: {ru:"Telegram", en:"Telegram"},
   contact_resume_label: {ru:"Резюме (PDF)", en:"Resume (PDF)"},
   contact_resume_val: {ru:"открыть ↗", en:"open ↗"},
