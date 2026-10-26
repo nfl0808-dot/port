@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Посадка пассажиров · Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="sig" href="index.html" data-i18n="sig_name">Дима Мельников</a>
+    <div class="topbar-right">
+      <nav>
+        <a href="index.html#projects" data-i18n="nav_projects">Проекты</a>
+        <a href="index.html#about" data-i18n="nav_about">Про меня</a>
+        <a href="#" data-i18n="nav_resume" data-i18n-href="resume_url">Резюме ↗</a>
+      </nav>
+      <div class="lang-switch">
+        <button data-lang="ru" class="active" aria-pressed="true">RU</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="case-hero">
+  <div class="wrap-wide">
+    <a class="back-link" href="index.html" data-i18n="back_link">← Все проекты</a>
+    <div class="case-meta"><span class="tag" data-i18n="tag1">Сирена-Трэвел</span><span class="tag" data-i18n="tag2">B2G · Авиация</span><span class="tag" data-i18n="tag3">2024</span></div>
+    <h1 data-i18n="case_h1">Перепроектировал флоу посадки пассажиров</h1>
+    <p class="role-line" data-i18n="role_line"><b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.</p>
+    <p class="role-line" data-i18n="team_line"><b>Команда:</b> frontend, backend, product manager.</p>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap-wide">
+    <div class="cover" style="--cover: url('cover-boarding.jpg')"></div>
+
+    <p data-i18n="intro_p">Посадка — второй из&nbsp;двух флоу, которые я вместе с&nbsp;продактом выбрал для&nbsp;обновления CRM Сирена-Трэвел, потому что его можно было быстро протестировать после релиза. Первый, <a href="case-avia.html">регистрация пассажира</a>, описан в&nbsp;отдельном кейсе.</p>
+
+    <h2 data-i18n="h2_what">Что я сделал</h2>
+
+    <p data-i18n="what_p1">Вместе с&nbsp;аналитиками определил, какие события логировать на&nbsp;посадке, чтобы после теста было видно, что&nbsp;сработало. Затем спроектировал wireframes и&nbsp;блок-схемы: список пассажиров, карту мест и&nbsp;сценарии, когда посадка проходит с&nbsp;проблемами.</p>
+
+    <p data-i18n="what_p2">После этого нарисовал макеты и&nbsp;показал разные варианты агентам в&nbsp;10 авиакомпаниях и&nbsp;двух аэропортах. Среди сценариев — посадка пассажира с&nbsp;купленной услугой Extra Seat и&nbsp;посадка, где сразу несколько проблем.</p>
+
+    <h2 data-i18n="h2_mockups">Какие получились макеты</h2>
+
+    <div class="mockup-feed">
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('mockup-6.jpg')"></div>
+        <p class="mockup-caption" data-i18n="mockup6_caption">Посадка. Список пассажиров и&nbsp;карта мест.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('mockup-7.jpg')"></div>
+        <p class="mockup-caption" data-i18n="mockup7_caption">Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('mockup-8.jpg')"></div>
+        <p class="mockup-caption" data-i18n="mockup8_caption">Неудачная посадка пассажира с&nbsp;несколькими проблемами.</p>
+      </div>
+    </div>
+
+    <h2 data-i18n="h2_outcome">Эффект</h2>
+
+    <p data-i18n="outcome_p">Отдельной метрики по&nbsp;посадке нет. В&nbsp;тестовой эксплуатации пользователи отмечали, что&nbsp;стало визуально понятнее и&nbsp;удобнее.</p>
+
+    <h2 data-i18n="h2_next">Что будем делать дальше</h2>
+
+    <p data-i18n="next_p">После тестовой эксплуатации я поговорил с&nbsp;пользователями. Вместе с&nbsp;продакт-менеджером наметил следующие шаги:</p>
+
+    <ul>
+      <li data-i18n="next_li1">Добавить функционала в&nbsp;работу с&nbsp;Priority List на&nbsp;посадке (пересаживать пассажиров, менять данные и&nbsp;т.д.).</li>
+      <li data-i18n="next_li2">Добавить больше визуальной информации в&nbsp;карту мест (сейчас её&nbsp;не&nbsp;хватает пользователям).</li>
+    </ul>
+
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="case-nav">
+    <a href="index.html" data-i18n="back_link">← Все проекты</a>
+    <a href="case-migration.html" data-i18n="casenav_next">Следующий кейс: переход на веб →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-meta">
+    <span>© 2026 · Дима Мельников</span>
+    <span data-i18n="footer_role">Продуктовый дизайнер</span>
+  </div>
+</footer>
+
+<script>
+window.TRANSLATIONS = {
+  __title: {"ru": "Посадка пассажиров · Портфолио", "en": "Passenger boarding · Portfolio"},
+  sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
+  nav_projects: {ru:"Проекты", en:"Projects"},
+  nav_about: {ru:"Про меня", en:"About"},
+  nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
+  resume_url: {ru:"Melnikov_Dmitriy_Resume.pdf", en:"Melnikov_Dmitriy_CV.pdf"},
+  back_link: {ru:"← Все проекты", en:"← All projects"},
+  footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"},
+  tag1: {ru:"Сирена-Трэвел", en:"Sirena-Travel"},
+  tag2: {ru:"B2G · Авиация", en:"B2G · Aviation"},
+  tag3: {ru:"2024", en:"2024"},
+  case_h1: {ru:"Перепроектировал флоу посадки пассажиров", en:"Redesigned the passenger boarding flow"},
+  role_line: {ru:"<b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.", en:"<b>Role:</b> end-to-end design, from research to release. Defined success metrics together with the product manager, engineers, and data scientists, and kept working with the product after it was handed off to development."},
+  team_line: {ru:"<b>Команда:</b> frontend, backend, product manager.", en:"<b>Team:</b> frontend, backend, product manager."},
+  intro_p: {ru:"Посадка — второй из&nbsp;двух флоу, которые я вместе с&nbsp;продактом выбрал для&nbsp;обновления CRM Сирена-Трэвел, потому что его можно было быстро протестировать после релиза. Первый, <a href=\"case-avia.html\">регистрация пассажира</a>, описан в&nbsp;отдельном кейсе.", en:"Boarding is the second of the two flows I picked together with the product manager when updating the Sirena-Travel CRM, because it could be tested quickly after release. The first one, <a href=\"case-avia.html\">passenger check-in</a>, has its own case."},
+  h2_what: {ru:"Что я сделал", en:"What I did"},
+  what_p1: {ru:"Вместе с&nbsp;аналитиками определил, какие события логировать на&nbsp;посадке, чтобы после теста было видно, что&nbsp;сработало. Затем спроектировал wireframes и&nbsp;блок-схемы: список пассажиров, карту мест и&nbsp;сценарии, когда посадка проходит с&nbsp;проблемами.", en:"Together with the analysts, I defined which events to log during boarding, so it would be clear after testing what worked. Then I designed wireframes and flowcharts: the passenger list, the seat map, and the scenarios where boarding runs into problems."},
+  what_p2: {ru:"После этого нарисовал макеты и&nbsp;показал разные варианты агентам в&nbsp;10 авиакомпаниях и&nbsp;двух аэропортах. Среди сценариев — посадка пассажира с&nbsp;купленной услугой Extra Seat и&nbsp;посадка, где сразу несколько проблем.", en:"After that, I drew the mockups and showed different variants to agents at 10 airlines and two airports. The scenarios included boarding a passenger with a purchased Extra Seat service and boarding with several issues at once."},
+  h2_mockups: {ru:"Какие получились макеты", en:"How the mockups turned out"},
+  mockup6_caption: {ru:"Посадка. Список пассажиров и&nbsp;карта мест.", en:"Boarding. Passenger list and seat map."},
+  mockup7_caption: {ru:"Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.", en:"Successful boarding of a passenger with a purchased Extra Seat service."},
+  mockup8_caption: {ru:"Неудачная посадка пассажира с&nbsp;несколькими проблемами.", en:"Unsuccessful boarding of a passenger with several issues."},
+  h2_outcome: {ru:"Эффект", en:"Impact"},
+  outcome_p: {ru:"Отдельной метрики по&nbsp;посадке нет. В&nbsp;тестовой эксплуатации пользователи отмечали, что&nbsp;стало визуально понятнее и&nbsp;удобнее.", en:"There is no separate metric for boarding. During the test run, users said the interface had become visually clearer and more convenient."},
+  h2_next: {ru:"Что будем делать дальше", en:"Next Steps"},
+  next_p: {ru:"После тестовой эксплуатации я поговорил с&nbsp;пользователями. Вместе с&nbsp;продакт-менеджером наметил следующие шаги:", en:"After the test run, I talked to users. Together with the product manager, I mapped out the next steps:"},
+  next_li1: {ru:"Добавить функционала в&nbsp;работу с&nbsp;Priority List на&nbsp;посадке (пересаживать пассажиров, менять данные и&nbsp;т.д.).", en:"Add more functionality to the Priority List during boarding — reseating passengers, editing their data, and so on."},
+  next_li2: {ru:"Добавить больше визуальной информации в&nbsp;карту мест (сейчас её&nbsp;не&nbsp;хватает пользователям).", en:"Add more visual information to the seat map — users currently find it lacking."},
+  casenav_next: {ru:"Следующий кейс: переход на веб →", en:"Next case: moving to the web →"}
+};
+</script>
+<script src="i18n.js"></script>
+</body>
+</html>

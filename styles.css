@@ -203,3 +203,14 @@ footer{padding:48px 0 64px}
   .case-hero{padding-top:36px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- ссылки в тексте кейса ---------- */
+.case-body p a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.case-body p a:hover{text-decoration-thickness:2px}
+
+/* ---------- концепты ---------- */
+.concepts-lead{color:var(--ink-soft);max-width:60ch;margin:-32px 0 32px}
+.concept-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.concept{display:block;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--paper);transition:border-color .2s,transform .2s}
+.concept:hover{border-color:var(--accent);transform:translateY(-2px)}
+.concept img{display:block;width:100%;height:auto}

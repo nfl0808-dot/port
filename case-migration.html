@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Переход на веб · Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="sig" href="index.html" data-i18n="sig_name">Дима Мельников</a>
+    <div class="topbar-right">
+      <nav>
+        <a href="index.html#projects" data-i18n="nav_projects">Проекты</a>
+        <a href="index.html#about" data-i18n="nav_about">Про меня</a>
+        <a href="#" data-i18n="nav_resume" data-i18n-href="resume_url">Резюме ↗</a>
+      </nav>
+      <div class="lang-switch">
+        <button data-lang="ru" class="active" aria-pressed="true">RU</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="case-hero">
+  <div class="wrap-wide">
+    <a class="back-link" href="index.html" data-i18n="back_link">← Все проекты</a>
+    <div class="case-meta"><span class="tag" data-i18n="tag1">Сирена-Трэвел</span><span class="tag" data-i18n="tag2">B2G · Авиация</span><span class="tag" data-i18n="tag3">2024</span></div>
+    <h1 data-i18n="case_h1">Обновил CRM-систему для авиации, которая не обновлялась 20 лет</h1>
+    <p class="role-line" data-i18n="role_line"><b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.</p>
+    <p class="role-line" data-i18n="team_line"><b>Команда:</b> frontend, backend, product manager.</p>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap-wide">
+    <div class="cover" style="--cover: url('cover-migration.jpg')"></div>
+
+    <p data-i18n="intro_p">Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM закрывает весь цикл подготовки рейса: от&nbsp;бронирования пассажира до&nbsp;регистрации и&nbsp;вылета, и&nbsp;её используют авиакомпании и&nbsp;аэропорты в&nbsp;разных странах СНГ.</p>
+
+    <h2 data-i18n="h2_problem">Проблема</h2>
+
+    <p data-i18n="problem_p">Систему собрали 20 лет назад как desktop-приложение. Работать можно только с&nbsp;той машины, где оно установлено, удалённого доступа нет. Задача была не&nbsp;перерисовать интерфейс, а&nbsp;перенести продукт в&nbsp;веб и&nbsp;разобраться со&nbsp;всем, что&nbsp;накопилось за&nbsp;20 лет эксплуатации.</p>
+
+    <h2 data-i18n="h2_what">Что я сделал</h2>
+
+    <p data-i18n="what_p1"><strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншоты, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.</p>
+
+    <div class="mockup-feed">
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-1.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before1_caption">Список пассажиров на&nbsp;посадку.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-2.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before2_caption">Регистрация пассажира.</p>
+      </div>
+      <div class="mockup-item">
+        <div class="cover" style="--cover:url('before-3.jpg')"></div>
+        <p class="mockup-caption" data-i18n="before3_caption">Добавление услуг к&nbsp;пассажиру.</p>
+      </div>
+    </div>
+
+    <p data-i18n="what_p2">Адаптировал 40+ страниц компонентов Material UI под&nbsp;существующую палитру компании.</p>
+
+    <p data-i18n="what_p3"><strong>Дальше ушёл в&nbsp;MVP.</strong> Вносил правки по&nbsp;макетам, и&nbsp;параллельно команда переделывала backend и&nbsp;API. За&nbsp;5-недельный спринт я справился и&nbsp;передал продукт в&nbsp;месячную тестовую эксплуатацию в&nbsp;авиакомпанию.</p>
+
+    <h2 data-i18n="h2_result">Итоги</h2>
+
+    <div class="result">
+      <div class="kpi"><b data-i18n="kpi1_b">40+</b><span data-i18n="kpi1_span">страниц компонентов</span></div>
+      <div class="kpi"><b data-i18n="kpi2_b">5 недель</b><span data-i18n="kpi2_span">до MVP</span></div>
+      <div class="kpi"><b data-i18n="kpi3_b">1 месяц</b><span data-i18n="kpi3_span">тестовой эксплуатации</span></div>
+    </div>
+
+    <h2 data-i18n="h2_outcome">Эффект</h2>
+
+    <p data-i18n="outcome_p">Интерфейс, которым 20 лет пользовались только с&nbsp;одного компьютера, теперь работает в&nbsp;браузере и&nbsp;прошёл тестовую эксплуатацию в&nbsp;авиакомпании.</p>
+
+    <h2 data-i18n="h2_next">Что будем делать дальше</h2>
+
+    <p data-i18n="next_p">Вместе с&nbsp;продакт-менеджером наметил следующий шаг: сделать флоу удалённого подключения к&nbsp;рабочему месту.</p>
+
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="case-nav">
+    <a href="index.html" data-i18n="back_link">← Все проекты</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-meta">
+    <span>© 2026 · Дима Мельников</span>
+    <span data-i18n="footer_role">Продуктовый дизайнер</span>
+  </div>
+</footer>
+
+<script>
+window.TRANSLATIONS = {
+  __title: {"ru": "Переход на веб · Портфолио", "en": "Moving to the web · Portfolio"},
+  sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
+  nav_projects: {ru:"Проекты", en:"Projects"},
+  nav_about: {ru:"Про меня", en:"About"},
+  nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
+  resume_url: {ru:"Melnikov_Dmitriy_Resume.pdf", en:"Melnikov_Dmitriy_CV.pdf"},
+  back_link: {ru:"← Все проекты", en:"← All projects"},
+  footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"},
+  tag1: {ru:"Сирена-Трэвел", en:"Sirena-Travel"},
+  tag2: {ru:"B2G · Авиация", en:"B2G · Aviation"},
+  tag3: {ru:"2024", en:"2024"},
+  case_h1: {ru:"Обновил CRM-систему для авиации, которая не обновлялась 20 лет", en:"Modernized an aviation CRM system that hadn't been updated in 20 years"},
+  role_line: {ru:"<b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.", en:"<b>Role:</b> end-to-end design, from research to release. Defined success metrics together with the product manager, engineers, and data scientists, and kept working with the product after it was handed off to development."},
+  team_line: {ru:"<b>Команда:</b> frontend, backend, product manager.", en:"<b>Team:</b> frontend, backend, product manager."},
+  intro_p: {ru:"Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM закрывает весь цикл подготовки рейса: от&nbsp;бронирования пассажира до&nbsp;регистрации и&nbsp;вылета, и&nbsp;её используют авиакомпании и&nbsp;аэропорты в&nbsp;разных странах СНГ.", en:"Sirena-Travel is a leading distributor of aviation services in Russia. Their CRM covers the entire flight preparation cycle, from passenger booking to check-in and departure, and it's used by airlines and airports across several CIS countries."},
+  h2_problem: {ru:"Проблема", en:"The problem"},
+  problem_p: {ru:"Систему собрали 20 лет назад как desktop-приложение. Работать можно только с&nbsp;той машины, где оно установлено, удалённого доступа нет. Задача была не&nbsp;перерисовать интерфейс, а&nbsp;перенести продукт в&nbsp;веб и&nbsp;разобраться со&nbsp;всем, что&nbsp;накопилось за&nbsp;20 лет эксплуатации.", en:"The system was built 20 years ago as a desktop application. It only runs on the machine it's installed on, with no remote access. The task wasn't to redraw the interface, it was to move the product to the web and work through everything that had piled up over 20 years of use."},
+  h2_what: {ru:"Что я сделал", en:"What I did"},
+  what_p1: {ru:"<strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншоты, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.", en:"<strong>Started with engineering, not with mockups.</strong> Discussed with the team how they could ship the design fastest, and I settled on the Material UI design system, since other products at the company were already built on the Material UI React library, meaning the components would just need to be “re-skinned.” Below are screenshots of what the product looked like before I started working on it."},
+  before1_caption: {ru:"Список пассажиров на&nbsp;посадку.", en:"Passenger boarding list."},
+  before2_caption: {ru:"Регистрация пассажира.", en:"Passenger check-in."},
+  before3_caption: {ru:"Добавление услуг к&nbsp;пассажиру.", en:"Adding services to a passenger."},
+  what_p2: {ru:"Адаптировал 40+ страниц компонентов Material UI под&nbsp;существующую палитру компании.", en:"Adapted 40+ pages of Material UI components to the company's existing palette."},
+  what_p3: {ru:"<strong>Дальше ушёл в&nbsp;MVP.</strong> Вносил правки по&nbsp;макетам, и&nbsp;параллельно команда переделывала backend и&nbsp;API. За&nbsp;5-недельный спринт я справился и&nbsp;передал продукт в&nbsp;месячную тестовую эксплуатацию в&nbsp;авиакомпанию.", en:"<strong>Then I moved into the MVP.</strong> I adjusted the mockups while the team rebuilt the backend and API in parallel. I shipped it in a 5-week sprint and handed the product off for a month-long test run at an airline."},
+  h2_result: {ru:"Итоги", en:"Results"},
+  kpi1_b: {ru:"40+", en:"40+"},
+  kpi1_span: {ru:"страниц компонентов", en:"pages of components"},
+  kpi2_b: {ru:"5 недель", en:"5 weeks"},
+  kpi2_span: {ru:"до MVP", en:"to MVP"},
+  kpi3_b: {ru:"1 месяц", en:"1 month"},
+  kpi3_span: {ru:"тестовой эксплуатации", en:"of test run"},
+  h2_outcome: {ru:"Эффект", en:"Impact"},
+  outcome_p: {ru:"Интерфейс, которым 20 лет пользовались только с&nbsp;одного компьютера, теперь работает в&nbsp;браузере и&nbsp;прошёл тестовую эксплуатацию в&nbsp;авиакомпании.", en:"An interface that had only run on a single desktop machine for 20 years now works in the browser and has been tested at an airline."},
+  h2_next: {ru:"Что будем делать дальше", en:"Next Steps"},
+  next_p: {ru:"Вместе с&nbsp;продакт-менеджером наметил следующий шаг: сделать флоу удалённого подключения к&nbsp;рабочему месту.", en:"Together with the product manager, I mapped out the next step: building a remote-connection flow for workstations."}
+};
+</script>
+<script src="i18n.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CRM для авиакомпаний · Портфолио</title>
+<title>Регистрация пассажира · Портфолио</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
   <div class="wrap-wide">
     <a class="back-link" href="index.html" data-i18n="back_link">← Все проекты</a>
     <div class="case-meta"><span class="tag" data-i18n="tag1">Сирена-Трэвел</span><span class="tag" data-i18n="tag2">B2G · Авиация</span><span class="tag" data-i18n="tag3">2024</span></div>
-    <h1 data-i18n="case_h1">Обновил CRM-систему для авиации, которая не обновлялась 20 лет</h1>
+    <h1 data-i18n="case_h1">Сократил время регистрации пассажира с 10 до 3 минут</h1>
     <p class="role-line" data-i18n="role_line"><b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.</p>
     <p class="role-line" data-i18n="team_line"><b>Команда:</b> frontend, backend, product manager.</p>
   </div>
@@ -42,39 +42,26 @@
   <div class="wrap-wide">
     <div class="cover" style="--cover: url('cover-1.jpg')"></div>
 
-    <p data-i18n="intro_p">Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM закрывает весь цикл подготовки рейса: от&nbsp;бронирования пассажира до&nbsp;регистрации и&nbsp;вылета, и&nbsp;её используют авиакомпании и&nbsp;аэропорты в&nbsp;разных странах СНГ — то&nbsp;есть решения приходилось проверять на&nbsp;устойчивость сразу на&nbsp;нескольких рынках, а&nbsp;не на&nbsp;одном.</p>
+    <p data-i18n="intro_p">Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM для&nbsp;регистрации и&nbsp;посадки пассажиров используют 80% авиаперевозчиков СНГ.</p>
 
     <h2 data-i18n="h2_problem">Проблема</h2>
-    <p data-i18n="problem_p">Систему собрали 20 лет назад как desktop-приложение. Работать можно только с&nbsp;той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а&nbsp;перенести продукт в&nbsp;веб и&nbsp;разобраться со&nbsp;всем, что&nbsp;накопилось за&nbsp;20 лет эксплуатации.</p>
+
+    <p data-i18n="problem_p">Регистрация одного пассажира занимала около 10 минут, а&nbsp;интерфейс не&nbsp;менялся 20 лет. Нужно было сократить это время и&nbsp;сделать работу агента понятнее.</p>
 
     <h2 data-i18n="h2_what">Что я сделал</h2>
-    <p data-i18n="what_p1"><strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.</p>
 
-    <div class="mockup-feed">
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('before-1.jpg')"></div>
-        <p class="mockup-caption" data-i18n="before1_caption">Список пассажиров на посадку.</p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('before-2.jpg')"></div>
-        <p class="mockup-caption" data-i18n="before2_caption">Регистрация пассажира.</p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('before-3.jpg')"></div>
-        <p class="mockup-caption" data-i18n="before3_caption">Добавление услуг к&nbsp;пассажиру.</p>
-      </div>
-    </div>
+    <p data-i18n="what_p2"><strong>Начал с&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах: 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:</p>
 
-    <p data-i18n="what_p2"><strong>Дальше пошёл в&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах. Было 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:</p>
     <ul>
-      <li data-i18n="li1">Регистрация одного пассажира занимала не&nbsp;менее 5 минут — против ~2 минут в&nbsp;вебе у&nbsp;Emirates.</li>
+      <li data-i18n="li1">Регистрация одного пассажира занимала около 10 минут — против ~2 минут в&nbsp;вебе у&nbsp;Emirates.</li>
       <li data-i18n="li2">Визуальный интерфейс устарел за&nbsp;20 лет.</li>
       <li data-i18n="li3">Часть функций отсутствовала в&nbsp;продукте вообще — это&nbsp;подсветил конкурентный анализ.</li>
     </ul>
 
-    <p data-i18n="what_p3">Вместе с&nbsp;продактом выбрал два флоу, регистрацию и&nbsp;посадку, потому что их можно было быстро протестировать после релиза. С&nbsp;аналитиками определил метрики успеха и&nbsp;то, какие события логировать, чтобы после теста было видно, что&nbsp;сработало. После этого ушёл проектировать wireframes и&nbsp;блок-схемы, прежде чем&nbsp;рисовать макеты.</p>
+    <p data-i18n="what_p3">Вместе с&nbsp;продактом выбрал два флоу, регистрацию и&nbsp;посадку, потому что их можно было быстро протестировать после релиза. Посадку разобрал в&nbsp;<a href="case-boarding.html">отдельном кейсе</a>. С&nbsp;аналитиками определил метрики успеха и&nbsp;то, какие события логировать, чтобы после теста было видно, что&nbsp;сработало. Перед макетами спроектировал wireframes и&nbsp;блок-схемы.</p>
 
     <h2 data-i18n="h2_mockups">Какие получились макеты</h2>
+
     <div class="mockup-feed">
       <div class="mockup-item">
         <div class="cover" style="--cover:url('mockup-1.jpg')"></div>
@@ -96,25 +83,12 @@
         <div class="cover" style="--cover:url('mockup-5.jpg')"></div>
         <p class="mockup-caption" data-i18n="mockup5_caption">Добавление багажа и&nbsp;ручной клади пассажирам.</p>
       </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('mockup-6.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup6_caption">Посадка. Список пассажиров и&nbsp;карта мест.</p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('mockup-7.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup7_caption">Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.</p>
-      </div>
-      <div class="mockup-item">
-        <div class="cover" style="--cover:url('mockup-8.jpg')"></div>
-        <p class="mockup-caption" data-i18n="mockup8_caption">Неудачная посадка пассажира с&nbsp;несколькими проблемами.</p>
-      </div>
     </div>
 
-    <p data-i18n="what_p4"><strong>После макетов ушёл в&nbsp;тесты.</strong> Было 20 онлайн-тестов через Pathway, затем выезды в&nbsp;10 авиакомпаний и&nbsp;два аэропорта, где показывал разные варианты двух flow. Отвечал на&nbsp;вопросы и&nbsp;объяснял, как всё будет работать, ведь по&nbsp;сути система стала другой.</p>
-
-    <p data-i18n="what_p5"><strong>После тестов ушёл в&nbsp;разработку MVP.</strong> Вносил правки по&nbsp;макетам, и&nbsp;параллельно команда переделывала backend и&nbsp;API. За 5-недельный спринт я справился и&nbsp;передал в&nbsp;месячную тестовую эксплуатацию, в&nbsp;авиакомпанию. По её итогам вместе с&nbsp;аналитиками проверил метрики использования и&nbsp;зафиксировал, что&nbsp;стоит доработать в&nbsp;следующей итерации. Сейчас работаю над расширением этих флоу до&nbsp;полноценных.</p>
+    <p data-i18n="what_p4"><strong>После макетов ушёл в&nbsp;тесты.</strong> Было 20 онлайн-тестов через Pathway, затем выезды в&nbsp;10 авиакомпаний и&nbsp;два аэропорта, где показывал разные варианты флоу. Отвечал на&nbsp;вопросы и&nbsp;объяснял, как всё будет работать, ведь по&nbsp;сути система стала другой. Потом передал флоу в&nbsp;месячную тестовую эксплуатацию в&nbsp;авиакомпанию и&nbsp;вместе с&nbsp;аналитиками проверил метрики использования.</p>
 
     <h2 data-i18n="h2_result">Итоги тестового периода</h2>
+
     <div class="result">
       <div class="kpi"><b data-i18n="kpi1_b">6,000–8,000</b><span data-i18n="kpi1_span">MAU из 3 авиакомпаний</span></div>
       <div class="kpi"><b data-i18n="kpi2_b">~70</b><span data-i18n="kpi2_span">среднее кол-во юзеров в день</span></div>
@@ -122,21 +96,16 @@
     </div>
 
     <h2 data-i18n="h2_outcome">Эффект</h2>
-    <p data-i18n="outcome_p">Продукт вышел из&nbsp;тестовой эксплуатации с&nbsp;6 000–8 000 MAU: регистрация пассажира, которая раньше занимала от&nbsp;5 минут, теперь укладывается в&nbsp;3. Интерфейс, которым 20 лет пользовались только с&nbsp;одного компьютера, теперь работает в&nbsp;браузере и&nbsp;доступен из&nbsp;любой точки.</p>
 
-    <h2 data-i18n="h2_impact">Что будем делать дальше</h2>
-    <p data-i18n="impact_p">После тестовой эксплуатации я поговорил с&nbsp;пользователями и&nbsp;понял, что&nbsp;сейчас нужно расширяться в&nbsp;глубину. Вместе с&nbsp;продакт-менеджером наметил следующие шаги:</p>
-    <ul>
-      <li data-i18n="impact_li1">Сделать флоу удалённого подключения к&nbsp;рабочему месту.</li>
-      <li data-i18n="impact_li2">Добавить функционала в&nbsp;работу с&nbsp;Priority List на&nbsp;посадке (пересаживать пассажиров, менять данные и&nbsp;т.д.).</li>
-      <li data-i18n="impact_li3">Добавить больше визуальной информации в&nbsp;карту мест (сейчас её&nbsp;не&nbsp;хватает пользователям).</li>
-    </ul>
+    <p data-i18n="outcome_p">Регистрация пассажира, которая раньше занимала около 10 минут, теперь укладывается в&nbsp;3. Продукт вышел из&nbsp;тестовой эксплуатации с&nbsp;6&nbsp;000–8&nbsp;000 MAU.</p>
+
   </div>
 </section>
 
 <div class="wrap">
   <div class="case-nav">
     <a href="index.html" data-i18n="back_link">← Все проекты</a>
+    <a href="case-realty.html" data-i18n="casenav_next">Следующий кейс: CRM для недвижимости →</a>
   </div>
 </div>
 
@@ -149,43 +118,36 @@
 
 <script>
 window.TRANSLATIONS = {
-  __title: {ru:"CRM для авиакомпаний · Портфолио", en:"Airline CRM · Portfolio"},
+  __title: {"ru": "Регистрация пассажира · Портфолио", "en": "Passenger check-in · Portfolio"},
   sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
   nav_projects: {ru:"Проекты", en:"Projects"},
   nav_about: {ru:"Про меня", en:"About"},
   nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
-  resume_url: {ru:"Melnikov%20Dmitriy_Resume.pdf", en:"Melnikov%20Dmirity_CV.pdf"},
+  resume_url: {ru:"Melnikov_Dmitriy_Resume.pdf", en:"Melnikov_Dmitriy_CV.pdf"},
   back_link: {ru:"← Все проекты", en:"← All projects"},
+  footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"},
   tag1: {ru:"Сирена-Трэвел", en:"Sirena-Travel"},
   tag2: {ru:"B2G · Авиация", en:"B2G · Aviation"},
   tag3: {ru:"2024", en:"2024"},
-  case_h1: {ru:"Обновил CRM-систему для авиации, которая не обновлялась 20 лет", en:"Modernized an aviation CRM system that hadn't been updated in 20 years"},
-  role_line: {ru:'<b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.', en:"<b>Role:</b> end-to-end design, from research to release. Defined success metrics together with the product manager, engineers, and data scientists, and kept working with the product after it was handed off to development."},
-  team_line: {ru:'<b>Команда:</b> frontend, backend, product manager.', en:"<b>Team:</b> frontend, backend, product manager."},
-  intro_p: {ru:"Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM закрывает весь цикл подготовки рейса: от&nbsp;бронирования пассажира до&nbsp;регистрации и&nbsp;вылета, и&nbsp;её используют авиакомпании и&nbsp;аэропорты в&nbsp;разных странах СНГ — то&nbsp;есть решения приходилось проверять на&nbsp;устойчивость сразу на&nbsp;нескольких рынках, а&nbsp;не на&nbsp;одном.", en:"Sirena-Travel is a leading distributor of aviation services in Russia. Their CRM covers the entire flight preparation cycle, from passenger booking to check-in and departure, and it's used by airlines and airports across several CIS countries, so decisions had to hold up across multiple markets, not just one."},
+  case_h1: {ru:"Сократил время регистрации пассажира с 10 до 3 минут", en:"Cut passenger check-in time from 10 minutes to 3"},
+  role_line: {ru:"<b>Роль:</b> дизайн полного цикла, от исследования до релиза. Метрики успеха определял вместе с продактом, инженерами и дата-сайентистами, продолжил вести продукт и после передачи в разработку.", en:"<b>Role:</b> end-to-end design, from research to release. Defined success metrics together with the product manager, engineers, and data scientists, and kept working with the product after it was handed off to development."},
+  team_line: {ru:"<b>Команда:</b> frontend, backend, product manager.", en:"<b>Team:</b> frontend, backend, product manager."},
+  intro_p: {ru:"Сирена-Трэвел — лидер дистрибуции авиационных услуг в&nbsp;России. Их CRM для&nbsp;регистрации и&nbsp;посадки пассажиров используют 80% авиаперевозчиков СНГ.", en:"Sirena-Travel is a leading distributor of aviation services in Russia. Their CRM for passenger check-in and boarding is used by 80% of CIS air carriers."},
   h2_problem: {ru:"Проблема", en:"The problem"},
-  problem_p: {ru:"Систему собрали 20 лет назад как desktop-приложение. Работать можно только с&nbsp;той машины, где оно установлено, удалённого доступа нет. Задача была не перерисовать интерфейс, а&nbsp;перенести продукт в&nbsp;веб и&nbsp;разобраться со&nbsp;всем, что&nbsp;накопилось за&nbsp;20 лет эксплуатации.", en:"The system was built 20 years ago as a desktop application. It only runs on the machine it's installed on, with no remote access. The task wasn't to redraw the interface, it was to move the product to the web and work through everything that had piled up over 20 years of use."},
+  problem_p: {ru:"Регистрация одного пассажира занимала около 10 минут, а&nbsp;интерфейс не&nbsp;менялся 20 лет. Нужно было сократить это время и&nbsp;сделать работу агента понятнее.", en:"Checking in a single passenger took about 10 minutes, and the interface hadn't changed in 20 years. The goal was to cut that time and make the agent's work clearer."},
   h2_what: {ru:"Что я сделал", en:"What I did"},
-  what_p1: {ru:'<strong>Сначала пошёл к&nbsp;разработке, а&nbsp;не&nbsp;приступил к&nbsp;макетам.</strong> Обсудил с&nbsp;командой, как им будет быстрее переносить дизайн, и&nbsp;остановился на&nbsp;дизайн-системе Material UI потому, что в&nbsp;других продуктах компании ведётся разработка на&nbsp;библиотеке Material UI React, а&nbsp;значит компоненты нужно будет только «покрасить». Ниже скриншот, как выглядел продукт до&nbsp;начала работы с&nbsp;ним.', en:"<strong>Started with engineering, not with mockups.</strong> Discussed with the team how they could ship the design fastest, and I settled on the Material UI design system, since other products at the company were already built on the Material UI React library, meaning the components would just need to be \u201cre-skinned.\u201d Below is a screenshot of what the product looked like before I started working on it."},
-  before1_caption: {ru:"Список пассажиров на посадку.", en:"Passenger boarding list."},
-  before2_caption: {ru:"Регистрация пассажира.", en:"Passenger check-in."},
-  before3_caption: {ru:"Добавление услуг к&nbsp;пассажиру.", en:"Adding services to a passenger."},
-  what_p2: {ru:'<strong>Дальше пошёл в&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах. Было 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:', en:"<strong>Next came research.</strong> Ran customer research right at the airports: 10 interviews with passenger check-in agents and the technologists who prepare flights. Found three key problems:"},
-  li1: {ru:"Регистрация одного пассажира занимала не&nbsp;менее 5 минут — против ~2 минут в&nbsp;вебе у&nbsp;Emirates.", en:"Checking in a single passenger took at least 5 minutes, versus about 2 minutes in Emirates' web check-in."},
+  what_p2: {ru:"<strong>Начал с&nbsp;исследования.</strong> Провёл customer research прямо в&nbsp;аэропортах: 10 интервью с&nbsp;агентами по&nbsp;регистрации пассажиров и&nbsp;технологами, которые готовят рейсы. Нашёл три ключевые проблемы:", en:"<strong>Started with research.</strong> Ran customer research right at the airports: 10 interviews with passenger check-in agents and the technologists who prepare flights. Found three key problems:"},
+  li1: {ru:"Регистрация одного пассажира занимала около 10 минут — против ~2 минут в&nbsp;вебе у&nbsp;Emirates.", en:"Checking in a single passenger took about 10 minutes, versus about 2 minutes in Emirates' web check-in."},
   li2: {ru:"Визуальный интерфейс устарел за&nbsp;20 лет.", en:"The visual interface hadn't changed in 20 years."},
   li3: {ru:"Часть функций отсутствовала в&nbsp;продукте вообще — это&nbsp;подсветил конкурентный анализ.", en:"Some features were missing from the product entirely — competitive analysis brought that to light."},
-  what_p3: {ru:"Вместе с&nbsp;продактом выбрал два флоу, регистрацию и&nbsp;посадку, потому что их можно было быстро протестировать после релиза. С&nbsp;аналитиками определил метрики успеха и&nbsp;то, какие события логировать, чтобы после теста было видно, что&nbsp;сработало. После этого ушёл проектировать wireframes и&nbsp;блок-схемы, прежде чем&nbsp;рисовать макеты.", en:"Together with the product manager, I picked two flows, check-in and boarding, because they could be tested quickly after release. Worked with analysts to define success metrics and what events to log, so it would be clear after testing what worked. Then I moved on to wireframes and flowcharts before drawing any mockups."},
+  what_p3: {ru:"Вместе с&nbsp;продактом выбрал два флоу, регистрацию и&nbsp;посадку, потому что их можно было быстро протестировать после релиза. Посадку разобрал в&nbsp;<a href=\"case-boarding.html\">отдельном кейсе</a>. С&nbsp;аналитиками определил метрики успеха и&nbsp;то, какие события логировать, чтобы после теста было видно, что&nbsp;сработало. Перед макетами спроектировал wireframes и&nbsp;блок-схемы.", en:"Together with the product manager, I picked two flows, check-in and boarding, because they could be tested quickly after release. Boarding is covered in a <a href=\"case-boarding.html\">separate case</a>. Worked with analysts to define success metrics and what events to log, so it would be clear after testing what worked. Before the mockups, I designed wireframes and flowcharts."},
   h2_mockups: {ru:"Какие получились макеты", en:"How the mockups turned out"},
   mockup1_caption: {ru:"Таблица пассажиров после начала регистрации.", en:"Passenger table after check-in starts."},
   mockup2_caption: {ru:"Карта посадочных мест на&nbsp;этапе регистрации пассажира.", en:"Seat map at the passenger check-in stage."},
   mockup3_caption: {ru:"Этап проверки документов у&nbsp;группы пассажиров.", en:"Document check for a group of passengers."},
   mockup4_caption: {ru:"Выбор мест для&nbsp;группы регистрируемых пассажиров.", en:"Seat selection for a group of passengers being checked in."},
   mockup5_caption: {ru:"Добавление багажа и&nbsp;ручной клади пассажирам.", en:"Adding baggage and carry-on for passengers."},
-  mockup6_caption: {ru:"Посадка. Список пассажиров и&nbsp;карта мест.", en:"Boarding. Passenger list and seat map."},
-  mockup7_caption: {ru:"Успешная посадка пассажира с&nbsp;купленной услугой Extra Seat.", en:"Successful boarding of a passenger with a purchased Extra Seat service."},
-  mockup8_caption: {ru:"Неудачная посадка пассажира с&nbsp;несколькими проблемами.", en:"Unsuccessful boarding of a passenger with several issues."},
-  what_p4: {ru:"<strong>После макетов ушёл в&nbsp;тесты.</strong> Было 20 онлайн-тестов через Pathway, затем выезды в&nbsp;10 авиакомпаний и&nbsp;два аэропорта, где показывал разные варианты двух flow. Отвечал на&nbsp;вопросы и&nbsp;объяснял, как всё будет работать, ведь по&nbsp;сути система стала другой.", en:"<strong>After the mockups, I moved into testing.</strong> 20 online tests through Pathway, then site visits to 10 airlines and two airports, showing different variants of the two flows. I answered questions and explained how everything would work, since the system had essentially become a different one."},
-  what_p5: {ru:"<strong>После тестов ушёл в&nbsp;разработку MVP.</strong> Вносил правки по&nbsp;макетам, и&nbsp;параллельно команда переделывала backend и&nbsp;API. За 5-недельный спринт я справился и&nbsp;передал в&nbsp;месячную тестовую эксплуатацию, в&nbsp;авиакомпанию. По её итогам вместе с&nbsp;аналитиками проверил метрики использования и&nbsp;зафиксировал, что&nbsp;стоит доработать в&nbsp;следующей итерации. Сейчас работаю над расширением этих флоу до&nbsp;полноценных.", en:"<strong>After testing, I moved into MVP development.</strong> I adjusted the mockups while the team rebuilt the backend and API in parallel. I shipped it in a 5-week sprint and handed it off for a month-long test run at an airline. Afterwards, I reviewed usage metrics with the analysts and logged what to improve in the next iteration. I'm currently working on expanding these flows into full-fledged ones."},
+  what_p4: {ru:"<strong>После макетов ушёл в&nbsp;тесты.</strong> Было 20 онлайн-тестов через Pathway, затем выезды в&nbsp;10 авиакомпаний и&nbsp;два аэропорта, где показывал разные варианты флоу. Отвечал на&nbsp;вопросы и&nbsp;объяснял, как всё будет работать, ведь по&nbsp;сути система стала другой. Потом передал флоу в&nbsp;месячную тестовую эксплуатацию в&nbsp;авиакомпанию и&nbsp;вместе с&nbsp;аналитиками проверил метрики использования.", en:"<strong>After the mockups, I moved into testing.</strong> 20 online tests through Pathway, then site visits to 10 airlines and two airports, showing different variants of the flow. I answered questions and explained how everything would work, since the system had essentially become a different one. Then I handed the flow off for a month-long test run at an airline and reviewed usage metrics with the analysts."},
   h2_result: {ru:"Итоги тестового периода", en:"Results of the test period"},
   kpi1_b: {ru:"6,000–8,000", en:"6,000–8,000"},
   kpi1_span: {ru:"MAU из 3 авиакомпаний", en:"MAU across 3 airlines"},
@@ -194,14 +156,8 @@ window.TRANSLATIONS = {
   kpi3_b: {ru:"10 → 3 минуты", en:"10 → 3 min"},
   kpi3_span: {ru:"время регистрации пассажира", en:"passenger check-in time"},
   h2_outcome: {ru:"Эффект", en:"Impact"},
-  outcome_p: {ru:"Продукт вышел из&nbsp;тестовой эксплуатации с&nbsp;6 000–8 000 MAU: регистрация пассажира, которая раньше занимала от&nbsp;5 минут, теперь укладывается в&nbsp;3. Интерфейс, которым 20 лет пользовались только с&nbsp;одного компьютера, теперь работает в&nbsp;браузере и&nbsp;доступен из&nbsp;любой точки.", en:"The product came out of the test run with 6,000–8,000 MAU: passenger check-in that used to take at least 5 minutes now takes about 3. An interface that had only run on a single desktop machine for 20 years now works in the browser and is accessible from anywhere."},
-  h2_impact: {ru:"Что будем делать дальше", en:"Next Steps"},
-  impact_p: {ru:"После тестовой эксплуатации я поговорил с&nbsp;пользователями и&nbsp;понял, что&nbsp;сейчас нужно расширяться в&nbsp;глубину. Вместе с&nbsp;продакт-менеджером наметил следующие шаги:", en:"After the test run, I talked to users and realized it's time to go deeper. Together with the product manager, I mapped out the next steps:"},
-  impact_li1: {ru:"Сделать флоу удалённого подключения к&nbsp;рабочему месту.", en:"Build a remote-connection flow for check-in workstations."},
-  impact_li2: {ru:"Добавить функционала в&nbsp;работу с&nbsp;Priority List на&nbsp;посадке (пересаживать пассажиров, менять данные и&nbsp;т.д.).", en:"Add more functionality to the Priority List during boarding — reseating passengers, editing their data, and so on."},
-  impact_li3: {ru:"Добавить больше визуальной информации в&nbsp;карту мест (сейчас её&nbsp;не&nbsp;хватает пользователям).", en:"Add more visual information to the seat map — users currently find it lacking."},
-  casenav_next: {ru:"Следующий кейс: CRM для недвижимости →", en:"Next case: Real estate CRM →"},
-  footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"}
+  outcome_p: {ru:"Регистрация пассажира, которая раньше занимала около 10 минут, теперь укладывается в&nbsp;3. Продукт вышел из&nbsp;тестовой эксплуатации с&nbsp;6&nbsp;000–8&nbsp;000 MAU.", en:"Passenger check-in that used to take about 10 minutes now takes 3. The product came out of the test run with 6,000–8,000 MAU."},
+  casenav_next: {ru:"Следующий кейс: CRM для недвижимости →", en:"Next case: Real estate CRM →"}
 };
 </script>
 <script src="i18n.js"></script>
