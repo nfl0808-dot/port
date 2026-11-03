@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мобильные концепты · Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="sig" href="index.html" data-i18n="sig_name">Дима Мельников</a>
+    <div class="topbar-right">
+      <nav>
+        <a href="index.html#projects" data-i18n="nav_projects">Проекты</a>
+        <a href="index.html#about" data-i18n="nav_about">Про меня</a>
+        <a href="#" data-i18n="nav_resume" data-i18n-href="resume_url">Резюме ↗</a>
+      </nav>
+      <div class="lang-switch">
+        <button data-lang="ru" class="active" aria-pressed="true">RU</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="case-hero">
+  <div class="wrap-wide">
+    <a class="back-link" href="index.html" data-i18n="back_link">← Все проекты</a>
+    <div class="case-meta"><span class="tag" data-i18n="tag1">Концепты</span><span class="tag" data-i18n="tag2">Mobile · iOS</span></div>
+    <h1 data-i18n="case_h1">Мобильные концепты: тренировки с наградами и поиск подработки</h1>
+    <p class="role-line" data-i18n="role_line"><b>Роль:</b> дизайн флоу и интерфейсов.</p>
+    <p class="role-line" data-i18n="team_line"><b>Формат:</b> два концепта мобильных приложений, без разработки.</p>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="wrap-wide">
+    <div class="cover" style="--cover: url('cover-mobile.jpg')"></div>
+
+    <h2 data-i18n="h2_memfit">Memfit: тренировки с наградами</h2>
+
+    <p data-i18n="m_intro">Memfit — концепт приложения для тренировок, где за&nbsp;активность пользователь получает memcoins. Главный экран собирает всё нужное для&nbsp;старта: награду, кнопку тренировки, статистику недели и&nbsp;обучающее видео.</p>
+
+    <p data-i18n="m_p1">Профиль подсказывает, что&nbsp;ещё заполнить: предпочтения по&nbsp;еде и&nbsp;подключение TON-кошелька. Рядом прогресс достижений в&nbsp;процентах, баланс memcoins и&nbsp;раздел с&nbsp;новостями и&nbsp;статьями.</p>
+
+    <p data-i18n="m_p2">Перед тренировкой на&nbsp;карте идёт обратный отсчёт 3, 2, 1, GO. Во&nbsp;время бега остаются крупные время, дистанция, темп и&nbsp;пульс и&nbsp;две кнопки, Resume и&nbsp;Finish.</p>
+
+    <div class="phone-grid cols-5">
+      <figure class="phone"><img src="memfit-1.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="mf1">Главный экран: награда, старт тренировки и статистика недели.</figcaption></figure>
+      <figure class="phone"><img src="memfit-2.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="mf2">Профиль: заполнение данных, достижения и баланс memcoins.</figcaption></figure>
+      <figure class="phone"><img src="memfit-3.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="mf3">Обратный отсчёт перед тренировкой.</figcaption></figure>
+      <figure class="phone"><img src="memfit-4.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="mf4">Старт тренировки.</figcaption></figure>
+      <figure class="phone"><img src="memfit-5.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="mf5">Показатели во время тренировки на карте.</figcaption></figure>
+    </div>
+
+    <h2 data-i18n="h2_tempi">TEMPi: регистрация в приложении для поиска подработки</h2>
+
+    <p data-i18n="intro_p">TEMPi — концепт сервиса, где исполнители находят подработку со&nbsp;сменным графиком рядом с&nbsp;домом, а&nbsp;заказчики — людей на&nbsp;смену. Здесь собран флоу регистрации исполнителя: от&nbsp;первого экрана до&nbsp;списка профессий.</p>
+
+    <p data-i18n="what_p1">Собрал флоу из&nbsp;восьми экранов и&nbsp;состояний. Вход объединяет почту и&nbsp;телефон на&nbsp;одном экране, а&nbsp;номер подтверждается звонком: пользователю достаточно ввести последние четыре цифры входящего номера.</p>
+
+    <p data-i18n="what_p2">Дальше пользователь выбирает роль и&nbsp;заполняет данные. Поля подсвечиваются по&nbsp;состоянию, а&nbsp;требования к&nbsp;паролю подписаны под полем, поэтому ошибку видно сразу, а&nbsp;не&nbsp;после отправки формы.</p>
+
+    <p data-i18n="what_p3">На&nbsp;последних шагах задаётся город и&nbsp;радиус поиска на&nbsp;карте, затем профессии, которые интересны исполнителю. На&nbsp;их основе приложение предлагает вакансии. Палитру и&nbsp;состояния компонентов собрал в&nbsp;общую систему, чтобы экраны выглядели единым продуктом.</p>
+
+    <div class="phone-grid">
+      <figure class="phone"><img src="tempi-1.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph1">Загрузочный экран.</figcaption></figure>
+      <figure class="phone"><img src="tempi-2.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph2">Вход или регистрация по почте и телефону.</figcaption></figure>
+      <figure class="phone"><img src="tempi-3.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph3">Подтверждение номера: последние четыре цифры входящего звонка.</figcaption></figure>
+      <figure class="phone"><img src="tempi-4.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph4">Выбор роли: исполнитель или заказчик.</figcaption></figure>
+      <figure class="phone"><img src="tempi-5.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph5">Ввод данных с подсветкой корректных полей.</figcaption></figure>
+      <figure class="phone"><img src="tempi-6.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph6">Регистрация успешна.</figcaption></figure>
+      <figure class="phone"><img src="tempi-7.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph7">Город и радиус поиска работы на карте.</figcaption></figure>
+      <figure class="phone"><img src="tempi-8.jpg" alt="" loading="lazy" width="750" height="1624"><figcaption class="mockup-caption" data-i18n="ph8">Выбор профессий, на основе которых предлагаются вакансии.</figcaption></figure>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="case-nav">
+    <a href="index.html" data-i18n="back_link">← Все проекты</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-meta">
+    <span>© 2026 · Дима Мельников</span>
+    <span data-i18n="footer_role">Продуктовый дизайнер</span>
+  </div>
+</footer>
+
+<script>
+window.TRANSLATIONS = {
+  __title: {"ru": "Мобильные концепты · Портфолио", "en": "Mobile concepts · Portfolio"},
+  sig_name: {ru:"Дима Мельников", en:"Dima Melnikov"},
+  nav_projects: {ru:"Проекты", en:"Projects"},
+  nav_about: {ru:"Про меня", en:"About"},
+  nav_resume: {ru:"Резюме ↗", en:"Resume ↗"},
+  resume_url: {ru:"Melnikov_Dmitriy_Resume.pdf", en:"Melnikov_Dmitriy_CV.pdf"},
+  back_link: {ru:"← Все проекты", en:"← All projects"},
+  footer_role: {ru:"Продуктовый дизайнер", en:"Product designer"},
+  tag1: {ru:"Концепты", en:"Concepts"},
+  tag2: {ru:"Mobile · iOS", en:"Mobile · iOS"},
+  case_h1: {ru:"Мобильные концепты: тренировки с наградами и поиск подработки", en:"Mobile concepts: workouts with rewards and a job search"},
+  role_line: {ru:"<b>Роль:</b> дизайн флоу и интерфейсов.", en:"<b>Role:</b> flow and interface design."},
+  team_line: {ru:"<b>Формат:</b> два концепта мобильных приложений, без разработки.", en:"<b>Format:</b> two mobile app concepts, no development."},
+  h2_memfit: {ru:"Memfit: тренировки с наградами", en:"Memfit: workouts with rewards"},
+  m_intro: {ru:"Memfit — концепт приложения для тренировок, где за&nbsp;активность пользователь получает memcoins. Главный экран собирает всё нужное для&nbsp;старта: награду, кнопку тренировки, статистику недели и&nbsp;обучающее видео.", en:"Memfit is a concept for a workout app where users earn memcoins for activity. The home screen puts everything needed to start in one place: the reward, a training button, weekly stats and an educational video."},
+  m_p1: {ru:"Профиль подсказывает, что&nbsp;ещё заполнить: предпочтения по&nbsp;еде и&nbsp;подключение TON-кошелька. Рядом прогресс достижений в&nbsp;процентах, баланс memcoins и&nbsp;раздел с&nbsp;новостями и&nbsp;статьями.", en:"The profile suggests what is left to fill in: food preferences and connecting a TON wallet. Next to it are achievement progress in percent, the memcoin balance, and a section with news and articles."},
+  m_p2: {ru:"Перед тренировкой на&nbsp;карте идёт обратный отсчёт 3, 2, 1, GO. Во&nbsp;время бега остаются крупные время, дистанция, темп и&nbsp;пульс и&nbsp;две кнопки, Resume и&nbsp;Finish.", en:"Before a workout, a 3, 2, 1, GO countdown runs over the map. During a run, large time, distance, pace and heart rate figures stay on screen with two buttons, Resume and Finish."},
+  mf1: {ru:"Главный экран: награда, старт тренировки и статистика недели.", en:"Home: reward, workout start and weekly stats."},
+  mf2: {ru:"Профиль: заполнение данных, достижения и баланс memcoins.", en:"Profile: completing details, achievements and the memcoin balance."},
+  mf3: {ru:"Обратный отсчёт перед тренировкой.", en:"Countdown before a workout."},
+  mf4: {ru:"Старт тренировки.", en:"Workout start."},
+  mf5: {ru:"Показатели во время тренировки на карте.", en:"Live workout stats over the map."},
+  h2_tempi: {ru:"TEMPi: регистрация в приложении для поиска подработки", en:"TEMPi: sign-up in a job-search app"},
+  intro_p: {ru:"TEMPi — концепт сервиса, где исполнители находят подработку со&nbsp;сменным графиком рядом с&nbsp;домом, а&nbsp;заказчики — людей на&nbsp;смену. Здесь собран флоу регистрации исполнителя: от&nbsp;первого экрана до&nbsp;списка профессий.", en:"TEMPi is a concept for a service where workers find shift-based part-time jobs close to home and employers find people for a shift. This part covers the worker sign-up flow, from the first screen to the list of professions."},
+  what_p1: {ru:"Собрал флоу из&nbsp;восьми экранов и&nbsp;состояний. Вход объединяет почту и&nbsp;телефон на&nbsp;одном экране, а&nbsp;номер подтверждается звонком: пользователю достаточно ввести последние четыре цифры входящего номера.", en:"Built a flow of eight screens and states. Sign-in combines email and phone on one screen, and the number is confirmed by a call: the user only enters the last four digits of the incoming number."},
+  what_p2: {ru:"Дальше пользователь выбирает роль и&nbsp;заполняет данные. Поля подсвечиваются по&nbsp;состоянию, а&nbsp;требования к&nbsp;паролю подписаны под полем, поэтому ошибку видно сразу, а&nbsp;не&nbsp;после отправки формы.", en:"Next, the user picks a role and fills in their details. Fields are highlighted by state and the password requirements are written under the field, so a mistake is visible immediately rather than after submitting the form."},
+  what_p3: {ru:"На&nbsp;последних шагах задаётся город и&nbsp;радиус поиска на&nbsp;карте, затем профессии, которые интересны исполнителю. На&nbsp;их основе приложение предлагает вакансии. Палитру и&nbsp;состояния компонентов собрал в&nbsp;общую систему, чтобы экраны выглядели единым продуктом.", en:"The last steps set the city and the search radius on a map, then the professions the worker is interested in. The app suggests vacancies based on them. I put the palette and component states into one system so the screens read as a single product."},
+  ph1: {ru:"Загрузочный экран.", en:"Loading screen."},
+  ph2: {ru:"Вход или регистрация по почте и телефону.", en:"Sign-in or sign-up with email and phone."},
+  ph3: {ru:"Подтверждение номера: последние четыре цифры входящего звонка.", en:"Phone confirmation: the last four digits of an incoming call."},
+  ph4: {ru:"Выбор роли: исполнитель или заказчик.", en:"Role choice: worker or employer."},
+  ph5: {ru:"Ввод данных с подсветкой корректных полей.", en:"Entering details with valid fields highlighted."},
+  ph6: {ru:"Регистрация успешна.", en:"Sign-up complete."},
+  ph7: {ru:"Город и радиус поиска работы на карте.", en:"City and job search radius on a map."},
+  ph8: {ru:"Выбор профессий, на основе которых предлагаются вакансии.", en:"Choosing professions that vacancies are matched to."}
+};
+</script>
+<script src="i18n.js"></script>
+</body>
+</html>

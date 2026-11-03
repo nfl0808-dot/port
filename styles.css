@@ -214,3 +214,11 @@ footer{padding:48px 0 64px}
 .concept{display:block;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--paper);transition:border-color .2s,transform .2s}
 .concept:hover{border-color:var(--accent);transform:translateY(-2px)}
 .concept img{display:block;width:100%;height:auto}
+
+/* ---------- мобильные экраны ---------- */
+.phone-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px;margin:8px 0 40px}
+.phone{margin:0}
+.phone img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid var(--line)}
+.phone figcaption{margin-top:12px;font-size:14px;line-height:1.4}
+.phone-grid.cols-5{grid-template-columns:repeat(5,1fr);gap:28px 18px}
+@media(max-width:900px){.phone-grid,.phone-grid.cols-5{grid-template-columns:repeat(2,1fr)}}
